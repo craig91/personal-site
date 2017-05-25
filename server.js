@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const bodyparser = require('body-parser');
-const router = require('routes/index.js');
+const router = require('./routes/index.js');
 
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(express.static('./public'));
