@@ -1,0 +1,59 @@
+main {
+  text-align: left;
+  width: 700px;
+  margin-left: 225px;
+}
+
+.menu {
+  padding: 0 0 20px;
+}
+
+.menu li {
+display: inline;
+margin-right: 15px;
+list-style-type: none;
+}
+
+.projects.title {
+  border-top: 8px solid red;
+}
+
+.projects {
+  color: #2d2d34;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.posts {
+  padding: 0;
+  list-style: none;
+}
+
+.posts li {
+  margin-bottom: 36px;
+  padding-bottom: 10px;
+  display: inline-block;
+  width: 85%;
+  border-bottom: 1px dashed #e6e6e6;
+}
+
+.posts .post-title {
+  font-weight: bold;
+  font-size: 1em;
+  border-bottom: 2px solid transparent;
+  transition: border 300ms linear;
+  text-decoration: none;
+}
+
+.posts .descript {
+  margin: 6px 0;
+}
+
+.posts .date {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #999;
+}
