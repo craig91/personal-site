@@ -1,5 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
+import { Link } from 'react-router';
+import BlogPage from './blog_page.jsx';
 
 
 class BlogList extends React.Component {
@@ -24,7 +26,7 @@ class BlogList extends React.Component {
         return(
             <ol key={idx} className="posts">
               <li>
-                <a className="post-title" href="">{val.title}</a>
+                <Link to={"/blogs/ + val.id"} className="post-title" href="">{val.title}</Link>
                 <div className="descript">{val.shortDescript}
                 </div>
                 <span className="date">
