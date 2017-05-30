@@ -17,7 +17,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <SideBar />
+        
         {this.props.children}
       </div>
     )
@@ -30,7 +30,7 @@ ReactDOM.render (
   <Router history={browserHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={BlogWrapper} />
-      <Route path='/blogs' component={BlogPage} />
+      <Route path='/blogs/:id' component={BlogPage} />
     </Route>
   </Router>,
   document.getElementById('root')
