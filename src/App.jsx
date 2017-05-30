@@ -30,7 +30,7 @@ ReactDOM.render (
   <Router history={browserHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={BlogWrapper} />
-      <Route path='/blogs/:id' component={BlogPage} />
+      <Route path='/blogs' component={BlogPage} />
     </Route>
   </Router>,
   document.getElementById('root')
