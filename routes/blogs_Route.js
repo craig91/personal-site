@@ -20,8 +20,6 @@ function getOneBlog(req, res) {
   .catch((err) => console.log('one blog', error))
 }
 
-
-
 router.route('/')
 .get(allBlogs)
 
