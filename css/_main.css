@@ -4,6 +4,12 @@ main {
   margin-left: 225px;
 }
 
+.blogPost_main {
+  text-align: left;
+  width: 700px;
+  margin-left: 225px;
+}
+
 .menu {
   padding: 0 0 20px;
 }
