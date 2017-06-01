@@ -10,7 +10,7 @@ class SideBar extends React.Component {
         <aside>
           <section>
             <h2>Craig Dejean</h2>
-            <img src="../public/images/craig.jpg"/>
+            <img className="profilePic" src="../public/images/craig.jpg"/>
             <p>Check me out on
               <a href="https://twitter.com/t3chcraig1" target="_blank"> twitter</a>,
 
