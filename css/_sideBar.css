@@ -1,4 +1,4 @@
-* {
+*  {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -19,7 +19,7 @@ aside {
   line-height: 21px;
 }
 
-img {
+.profilePic {
   border-radius: 50px;
   height: 100px;
   width: 100px;
