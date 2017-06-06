@@ -22,10 +22,11 @@ class BlogPage extends React.Component {
       let blog = this.state.blogs;
       console.log(blog)
       return (
-        <main className="blogPost_main" >
-           <img src={this.state.blogs.hero}></img>
-           <div>{this.state.blogs.post}</div>
-
+        <main className="blogPost_main">
+          <div className="banner" style={{
+            backgroundImage: `url(${this.state.blogs.hero})`
+          }}></div>
+          <div className="content">{this.state.blogs.post}</div>
         </main>
       )
     } else {
@@ -36,13 +37,5 @@ class BlogPage extends React.Component {
   }
 }
 
-
-// <div>
-//   <div className="blog_banner">
-//     <img src={this.state.blogs.hero}></img>
-//   </div>
-//   <div>{this.state.blogs.post}</div>
-//   <div>{}</div>
-// </div>
 
 export default BlogPage;
