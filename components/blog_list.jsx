@@ -20,6 +20,7 @@ class BlogList extends React.Component {
   render() {
     return (
       <div>
+        <SideBar />
         <div>{this.state.blogs.length === 0
             ? "Loading.."
             : this.state.blogs.map(function(val, idx) {
