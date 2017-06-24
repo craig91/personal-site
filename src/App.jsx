@@ -17,7 +17,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <SideBar />
         {this.props.children}
       </div>
     )
