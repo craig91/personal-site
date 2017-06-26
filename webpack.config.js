@@ -1,7 +1,7 @@
 module.exports = {
   entry: "./src/App.jsx",
   output: {
-    path: "./public",
+    path: __dirname + "./public",
     filename: "bundle.js",
   },
   module: {
@@ -9,7 +9,7 @@ module.exports = {
       {
         test: [/\.jsx?$/, /\.js?$/],
         exclude: /(node_modules)/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react'],
           plugins: ["transform-react-jsx-img-import"]
@@ -30,6 +30,6 @@ module.exports = {
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ["", ".js", ".jsx" ]
+    extensions: ["*", ".js", ".jsx" ]
   }
 };
