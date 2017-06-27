@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import {Link} from 'react-router';
 import BlogPage from './blog_page.jsx';
-import SideBar from './side_bar.jsx';
+var Markdown = require('react-markdown');
 
 class BlogList extends React.Component {
   constructor(props) {
@@ -20,7 +20,6 @@ class BlogList extends React.Component {
   render() {
     return (
       <div>
-        <SideBar />
         <div>{this.state.blogs.length === 0
             ? "Loading.."
             : this.state.blogs.map(function(val, idx) {
@@ -28,8 +27,7 @@ class BlogList extends React.Component {
                 <ol key={idx} className="posts">
                   <li>
                     <Link to={"/blogs/" + val.id} className="post-title" href="">{val.title}</Link>
-                    <div className="descript">{val.shortDescript}
-                    </div>
+                    <Markdown className="descript" source={val.shortDescript} />
                     <span className="date">
                       Date Posted: May 8th, 2017</span>
                   </li>
