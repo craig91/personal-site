@@ -22,12 +22,17 @@ class BlogPage extends React.Component {
       let blog = this.state.blogs;
       console.log(blog)
       return (
-        <main className="blogPost_main">
-          <div className="banner" style={{
+        <div>
+          <div className="overlay">
+          {/*<div className="banner" style={{
             backgroundImage: `url(${this.state.blogs.hero})`
-          }}></div>
+          }}></div>*/}
+          {/*<p className="test">hello world</p>*/}
+           <img src={this.state.blogs.hero} />
+           
+          </div>
           <div className="content">{this.state.blogs.post}</div>
-        </main>
+        </div>
       )
     } else {
       return (
