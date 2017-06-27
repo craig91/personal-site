@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogList from './blog_list.jsx';
+import SideBar from './side_bar.jsx';
 
 class BlogWrapper extends React.Component {
   constructor(props) {
@@ -7,6 +8,8 @@ class BlogWrapper extends React.Component {
   }
   render() {
     return (
+  <div>
+    <SideBar />
       <main>
         <ul className="menu">
           <li>Blog</li>
@@ -16,6 +19,7 @@ class BlogWrapper extends React.Component {
         <div className="projects title">Blogs</div>
         <BlogList />
       </main>
+    </div>
     )
   }
 }
