@@ -2,8 +2,54 @@ main {
   text-align: left;
   width: 700px;
   margin-left: 225px;
-} 
+}
 
+/******** TEST ******/
+header {
+  
+  background-size: cover;
+  height: 100vh;
+}
+
+header .gradient {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    );
+}
+
+.head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  
+}
+
+/*h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}*/
+.heading {
+  font-size: 2rem;
+}
+
+/*p {
+  margin: 0;
+  font-size: 1.3rem;
+}*/
+
+.blog-page-main {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/*******************************/
 .blogPost_main {
   text-align: center;
   width: auto;
