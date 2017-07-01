@@ -28,21 +28,19 @@ class BlogPage extends React.Component {
       console.log(blog)
       return (
         <div>
-          <header className="gradient" style={{
-              backgroundImage: `url(${this.state.blogs.hero})`, DivStyle 
-           }} >
-            <div className="head">
-              
-              
-            </div>
-          </header>
-
-          <main className="blog-page-main">
-            <h2 className="heading">Information about Cheese Curds</h2>
+          <div className="hero-image" style={{ backgroundImage: `url(${this.state.blogs.hero})` }}>
+            <div className="hero-text">
+              <h1> I am Craig</h1>
+              <p>I am a programmer</p>
+            </div>          
+            
+          </div>
+                <main className="blog-page-main">
+            <h2 className="heading">{this.state.blogs.heading}</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis, labore debitis nesciunt ipsam odio corporis architecto reiciendis voluptas ab quibusdam ratione rerum tempore voluptatibus libero cumque dignissimos vero hic!</p>
           </main>
 
-          <div className="content">{this.state.blogs.post}</div>
+          {/*<div className="content">{this.state.blogs.post}</div>*/}
         </div>
       )
     } else {
@@ -52,6 +50,16 @@ class BlogPage extends React.Component {
     }
   }
 }
+
+
+    // <header className="gradient" style={{
+    //           backgroundImage: `url(${this.state.blogs.hero})`, DivStyle 
+    //        }} >
+    //         <div className="head">
+              
+              
+    //         </div>
+    //       </header>
 
 // <div className="overlay">
 // {/*<div className="banner" style={{
