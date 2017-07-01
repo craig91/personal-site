@@ -11,6 +11,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       isAlpha: true
     },
+    heading: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      isAlpha: true
+    },
     shortDescript: {
       type: DataTypes.STRING,
       allowNull: false,
