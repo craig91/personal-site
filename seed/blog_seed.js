@@ -8,7 +8,7 @@ Blog.sync({force: true})
     title:'Xubuntu 17.04 2017 review',
     heading:'My review of Xubuntu 17.04',
     shortDescript:'Know before you download, Another Linux review',
-    post:'Xubuntu',
+    post:'Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit.',
     blogId: 1
   },
   {
@@ -16,7 +16,7 @@ Blog.sync({force: true})
     title:'Next endeavor! Learning Angular 2',
     heading:'Learning Angular 2 from the beginning',
     shortDescript:'Every week I will be telling you guys about learning Angular 2 on my own!',
-    post:'Angular 2',
+    post:'Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit.',
     blogId: 2
   },
   {
@@ -24,7 +24,7 @@ Blog.sync({force: true})
     title:'NGINX setup for production level scaling',
     heading:'Build your own NGINX web server to scale smoothly',
     shortDescript:'Showing you how to configure your NGINX build for scalability',
-    post:'NGINX',
+    post:'Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit.',
     blogId: 3
   },
 ]))

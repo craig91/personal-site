@@ -37,7 +37,7 @@ class BlogPage extends React.Component {
           </div>
                 <main className="blog-page-main">
             <h2 className="heading">{this.state.blogs.heading}</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis, labore debitis nesciunt ipsam odio corporis architecto reiciendis voluptas ab quibusdam ratione rerum tempore voluptatibus libero cumque dignissimos vero hic!</p>
+            <p>{this.state.blogs.post}</p>
           </main>
 
           {/*<div className="content">{this.state.blogs.post}</div>*/}
