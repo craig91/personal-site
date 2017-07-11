@@ -1,6 +1,6 @@
 'use strict'
 module.exports = function(sequelize, DataTypes) {
-  const Project = sequelize.define('Python', {
+  const Project = sequelize.define('Project', {
     image: {
       type: DataTypes.STRING,
       allowNull: false,
