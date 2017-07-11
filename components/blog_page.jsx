@@ -1,5 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
+import {Link} from 'react-router';
+import BlogWrapper from './blog_list_wrapper.jsx';
 
 const DivStyle = {
    backgroundSize: 'cover',
@@ -29,9 +31,12 @@ class BlogPage extends React.Component {
       return (
         <div>
           <div className="hero-image" style={{ backgroundImage: `url(${this.state.blogs.hero})` }}>
+            
+            <Link to={"/blog_list_wrapper/"}className="home">Home</Link>
+            
             <div className="hero-text">
-              <h1> I am Craig</h1>
-              <p>I am a programmer</p>
+              <h1> Xububtu </h1>
+              <p>Xububtu Linux review</p>
             </div>          
             
           </div>
