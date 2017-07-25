@@ -8,6 +8,7 @@ import '../css/_main.css';
 import SideBar from '../components/side_bar.jsx';
 import BlogWrapper from '../components/blog_list_wrapper.jsx';
 import BlogPage from '../components/blog_page.jsx';
+import ProjectList from '../components/project_page.jsx';
 
 
 class App extends React.Component {
@@ -30,6 +31,7 @@ ReactDOM.render (
     <Route path='/' component={App}>
       <IndexRoute component={BlogWrapper} />
       <Route path='/blogs/:id' component={BlogPage} />
+      <Route path='/Project' component={ProjectList} />
     </Route>
   </Router>,
   document.getElementById('root')
